@@ -2,15 +2,47 @@
 
 A shared library of AI skills and workflows for the D365 Field Service PM team, built on top of [Agency Cowork](https://github.com/ahsi-microsoft/agency-cowork).
 
-## Get Started — Set Up Agency Cowork
+## Get Started — Set Up Agency Cowork First
 
-These skills run inside **Agency Cowork**, a personal AI coworker that connects to your Microsoft 365 data and runs skills like these on demand. If you haven't set it up yet, start there first.
+These skills run inside **Agency Cowork**, a personal AI coworker that connects to your Microsoft 365 data. Before pulling anything from this repo, get Agency Cowork running on your machine.
 
 > **[→ Set up Agency Cowork](https://github.com/ahsi-microsoft/agency-cowork)**
 
-The setup wizard handles everything — identity, memory, M365 integrations, and skills — in a few minutes. Once you have it running, come back here to pull in the PM team's skills.
+The app includes a **setup wizard** that handles everything in a few minutes — agent identity, persistent memory, M365 integrations (Outlook, Teams, Calendar, SharePoint, ADO), and the full skills library. You don't need to configure anything manually.
+
+### What you get out of the box
+
+Agency Cowork ships with 25+ pre-built skills. As a PM, the most immediately useful are:
+
+| Skill | What it does |
+|-------|-------------|
+| **email-triage** | Categorizes your inbox, drafts responses, delivers a priority summary. Runs on a 30-minute schedule or on demand |
+| **weekly-report** | Generates a weekly status from your ADO work items, emails, and Teams activity |
+| **meeting-summary** | Produces a structured summary from a Teams meeting transcript or recap |
+| **powerpoint** | Creates new decks from scratch or edits existing `.pptx` files |
+| **word-doc** | Drafts and edits Word documents — specs, memos, briefs |
+| **excel** | Creates and edits spreadsheets with formulas, charts, and batch edits |
+| **ado** | Queries, creates, assigns, and comments on Azure DevOps work items |
+| **teams** | Sends and reads Teams messages, manages chats and channels |
+| **calendar** | Creates and manages Outlook calendar events, finds meeting times |
+| **sharepoint** | Downloads and uploads files between your machine and SharePoint/OneDrive |
+| **spec-kit** | Structured spec writing — problem statement, requirements, task breakdown |
+| **visual-explainer** | Turns a concept or doc into a visual diagram or explainer image |
+| **confluence** | Searches, creates, and edits Confluence pages |
+| **oneplanner** | Manages Project for the Web schedules |
+| **d365-expense** | Files Dynamics 365 expense reports from receipts |
+| **task-scheduler** | Schedules recurring tasks — e.g., run email triage every morning at 8am |
+
+To personalize your agent for your role and working style, just ask:
+> *"Personalize my agent"*
+
+This runs a guided interview that configures your agent's identity, communication style, and domain knowledge automatically.
+
+---
 
 ## What Lives Here
+
+Skills in this repo are **FS PM team-specific** — they go beyond what ships with Agency Cowork and are tailored to our workflows (release planning, EBC sessions, release notes, etc.).
 
 ```
 fs-pm-skills/
